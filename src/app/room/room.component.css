@@ -1,0 +1,101 @@
+.floating-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.main-container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1F1B2F;
+}
+.tool-bar {
+  padding: 10px;
+  background-color: #3700B3;
+  display: flex;
+  color: #FFFFFF;
+  align-items: center;
+  font-size: 40px;
+}
+.transfer {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+.message-board {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.input-container {
+  width: auto;
+  display: flex;
+  background-color: #3700B3;
+  padding: 10px;
+
+}
+.input-text-container {
+  width: 90%;
+  background-color: #FFFFFF;
+
+}
+.send-button-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.send-button {
+
+  }
+.send-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: green;
+    cursor: pointer;
+
+}
+.message {
+  display: flex;
+  width: 90%;
+  height: auto;
+  min-height: 30px;
+
+  background-color: white;
+}
+.message-text {
+  font-size: 40px;
+  line-height: 40px;
+  padding: 5px;
+  flex: 1 1 auto;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  word-break: break-all;
+   white-space: normal;
+}
+textarea {
+  font-size: 20px;
+  height: 100%;
+    width: 100%;
+  box-sizing:border-box;
+}
+span {
+  flex: 1 1 auto;
+}
+header,
+footer {
+  flex: none;
+}
+main {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: auto;
+}

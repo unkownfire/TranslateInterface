@@ -1,0 +1,17 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1F1B2F;
+}
+.button-container {
+  display: table;
+}
+a {
+  font-size: 40px;
+  padding: 20px;
+  margin: 50px;
+  display: block;
+}

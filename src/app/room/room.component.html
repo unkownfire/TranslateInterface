@@ -1,0 +1,46 @@
+<div class="main-container">
+  <header>
+    <div class="tool-bar">
+      <button mat-fab color="primary">
+        <mat-icon>logout</mat-icon>
+      </button>
+      <span></span>
+      <div class="">
+        {{esTen ? 'English' : 'Español'}}
+      </div>
+      <div class="" (click)="switch()">
+
+        <mat-icon class="transfer" >sync_alt</mat-icon>
+      </div>
+      <div class="">
+        {{esTen ? 'Spanish' : 'Inglés'}}
+      </div>
+      <span></span>
+    </div>
+  </header>
+  <main>
+    <div class="message-board" *ngFor="let item of messages">
+      <div class="message">
+        <div class="message-text">
+          <p>{{item.text}}</p>
+          <mat-divider></mat-divider>
+          <p>{{item.translation}}</p>
+        </div>
+        <button mat-icon-button><mat-icon>thumb_up</mat-icon></button>
+        <button mat-icon-button><mat-icon>thumb_down</mat-icon></button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="input-container">
+      <div class="input-text-container">
+        <textarea [(ngModel)]="message" rows="8" cols="80"></textarea>
+      </div>
+      <div class="send-button-container">
+        <div (click)="send()">
+          <mat-icon class="send-icon">send</mat-icon>
+        </div>
+      </div>
+    </div>
+  </footer>
+<div>
